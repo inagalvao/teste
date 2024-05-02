@@ -1,0 +1,92 @@
+<!-- https://docs.google.com/forms/d/e/1FAIpQLSeMIUiogc-t9judBD6mAfbXbcTLLzTPZaJNXkjudga6t5k8PQ/viewform?usp=sf_link -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qual é o nível de segurança da minha senha?</title>
+<style>
+body {
+    text-align: center;
+    background-color: #f0f0f0; /* Cor de fundo */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo do container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+h2 {
+    color: #333; /* Cor do título */
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Cor da borda */
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+p#mensagem {
+    margin-top: 20px;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff; /* Cor do texto dos botões */
+}
+
+a.button.segura {
+    background-color: lightgreen;
+}
+
+a.button.atualizar {
+    background-color: lightcoral;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Teste de Senha Segura</h2>
+        <form action="" method="post" onsubmit="return validarSenha();">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            <button type="submit">Verificar</button>
+        </form>
+        <p id="mensagem"></p>
+        <div class="botao">
+            <a href="www.google.com" class="button segura">Está segura!</a>
+            <a href="www.google.com" class="button atualizar">Vou atualizar</a>
+        </div>
+    </div>
+</body>
+</html>
